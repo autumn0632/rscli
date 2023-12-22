@@ -8,13 +8,16 @@ pub enum CliCmd {
     Exit,
     Unknown(String),
 }
-
 impl CliCmd {
-    pub fn exec_cmd(&self) {
+    pub fn exec_cmd(&self) -> Result<(), String> {
         match self {
-            CliCmd::Init => Init::new().running(),
-            CliCmd::Exit => exit(0),
-            CliCmd::Unknown(cmd) => println!("Unknown command: {}", cmd),
+            CliCmd::Init => Init::new().exec(),
+            CliCmd::Exit => {
+                exit(0);
+                #[allow(unreachable_code)]
+                Ok(())
+            }
+            CliCmd::Unknown(cmd) => Err(format!("Unknown command: {}", cmd)),
         }
     }
 }

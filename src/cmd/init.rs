@@ -27,7 +27,7 @@ impl Init {
         }
     }
 
-    pub fn running(&mut self) {
+    pub fn exec(&mut self) -> Result<(), String> {
         self.set_render_config();
         self.get_default_route();
         self.get_interface();
@@ -36,6 +36,7 @@ impl Init {
         self.input_ipv4();
         self.input_ipv6();
         self.print();
+        Ok(())
     }
 
     fn set_render_config(&mut self) {

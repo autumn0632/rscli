@@ -20,10 +20,10 @@ impl CliInput {
         }
     }
 
-    pub fn handle(&self) {
+    pub fn handle(&self) -> Result<(), String> {
         match self {
             CliInput::Cmd(cmd) => cmd.exec_cmd(),
-            CliInput::Empty => {}
+            CliInput::Empty => Err("Empty input".to_string()),
         }
     }
 }
@@ -32,7 +32,11 @@ pub fn pares_stdin() {
     loop {
         let input = Text::new("").prompt();
         match input {
-            Ok(cmd) => CliInput::new(&cmd).handle(),
+            Ok(cmd) => {
+                if let Err(err) = CliInput::new(&cmd).handle() {
+                    println!("{}", err);
+                }
+            }
             Err(err) => println!("{}", err),
         }
     }
