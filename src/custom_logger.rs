@@ -6,7 +6,11 @@ use std::fs::OpenOptions;
 const LOG_FILE: &str = "ddi3cli.log";
 
 pub fn init() -> Result<(), SetLoggerError> {
-    let config = ConfigBuilder::new().set_time_format_rfc3339().build();
+    let config = ConfigBuilder::new()
+        .set_time_format_rfc3339()
+        .set_location_level(LevelFilter::Info)
+        .build();
+
     // 打开日志文件以追加模式
     let log_file = OpenOptions::new()
         .create(true)

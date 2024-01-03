@@ -1,3 +1,26 @@
 2024-01-03T09:28:01.087320793Z [INFO] start ddi3cli
 2024-01-03T09:30:36.714441515Z [INFO] start ddi3cli
 2024-01-03T09:32:07.632246596Z [INFO] start ddi3cli
+2024-01-03T09:59:30.444368425Z [INFO] start ddi3cli
+2024-01-03T09:59:30.444553635Z [TRACE] (1) ddi3cli: [src/main.rs:11] start ddi3cli for trace
+2024-01-03T09:59:30.445019482Z [TRACE] (1) mio::poll: [/root/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/mio-0.8.10/src/poll.rs:551] registering event source with poller: token=Token(0), interests=READABLE
+2024-01-03T09:59:30.445527282Z [TRACE] (1) mio::poll: [/root/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/mio-0.8.10/src/poll.rs:551] registering event source with poller: token=Token(1), interests=READABLE
+2024-01-03T10:08:38.096723838Z [INFO] start ddi3cli
+2024-01-03T10:08:38.09703328Z [ERROR] start ddi3cli
+2024-01-03T10:08:38.097261935Z [DEBUG] (1) ddi3cli: start ddi3cli
+2024-01-03T10:12:06.123169412Z [INFO] start ddi3cli
+2024-01-03T10:12:06.12342595Z [ERROR] start ddi3cli
+2024-01-03T10:12:06.123581483Z [DEBUG] (1) start ddi3cli
+2024-01-03T10:13:17.276135289Z [INFO] [src/main.rs:10] start ddi3cli
+2024-01-03T10:13:17.276423692Z [ERROR] start ddi3cli
+2024-01-03T10:13:17.276592882Z [DEBUG] (1) ddi3cli: [src/main.rs:12] start ddi3cli
+2024-01-03T10:14:42.639880559Z [INFO] [src/main.rs:10] start ddi3cli
+2024-01-03T10:14:42.640174443Z [ERROR] start ddi3cli
+2024-01-03T10:15:46.618115878Z [INFO] [src/main.rs:10] start ddi3cli
+2024-01-03T10:15:46.618373568Z [ERROR] start ddi3cli
+2024-01-03T10:16:58.028484437Z [INFO] [src/main.rs:10] start ddi3cli
+2024-01-03T10:16:58.028780845Z [ERROR] start ddi3cli
+2024-01-03T10:18:10.913543074Z [INFO] [src/main.rs:10] start ddi3cli
+2024-01-03T10:19:10.251583386Z [INFO] ddi3cli: start ddi3cli
+2024-01-03T10:19:22.153776219Z [INFO] ddi3cli: start ddi3cli
+2024-01-03T10:19:55.108232541Z [INFO] [src/main.rs:10] start ddi3cli

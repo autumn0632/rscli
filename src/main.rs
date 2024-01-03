@@ -1,4 +1,4 @@
-use log::info;
+use log::{debug, error, info, trace};
 
 pub mod cmd;
 pub mod custom_logger;
